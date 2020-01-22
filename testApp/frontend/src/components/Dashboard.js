@@ -41,7 +41,7 @@ export default class Dashboard extends Component {
     updateData = (data, key) => {
         if (key === "topComplaints") this.setState({...this.state, topComplaint: data[0]["complaint_type"]})
         else if (key === "openCases" || key === "closedCases") this.setState({...this.state, [key]: data})
-        else this.setState({...this.state, cases: [...data]}, () => console.log(this.state))
+        else this.setState({...this.state, cases: [...data]})
     }
 
 
