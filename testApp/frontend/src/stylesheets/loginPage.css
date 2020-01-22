@@ -1,0 +1,48 @@
+.login {
+    margin: auto;
+    width: 50%;
+    height: 70%;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    -webkit-box-shadow: 0 0 10px rgb(0,0,0);
+    -moz-box-shadow: 0 0 10px rgb(0,0,0);
+}
+
+#loginForm {
+    margin-bottom: 10%;
+}
+
+#loginForm input {
+    height: 4vh;
+    border-radius: 7px;
+}
+
+#loginForm .submitButton {
+    background-color: rgb(30, 64, 163);
+    color: rgb(245, 245, 245);
+    border: 2px solid black;
+    width: 30%;
+    height: 5vh;
+}
+
+
+#loginForm .submitButton:hover {
+    background-color: rgb(245, 245, 245);
+    border-color: rgb(30, 64, 163);
+    color: rgb(30, 64, 163);    
+}
+
+.inputDiv {
+    margin-bottom: 3%;
+}
+
+.errorSpan {
+    background-color: rgb(255, 88, 37);
+    font-style: italic;
+    color: rgb(245, 245, 245);
+    padding: 1%;
+    border-radius: 7px;
+    margin-top: 5%;
+}

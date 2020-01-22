@@ -24,5 +24,7 @@ class Complaint(models.Model):
   council_dist = models.CharField(max_length=10, blank=True, default="", null=True)
   community_board = models.CharField(max_length=150, blank=True, default="", null=True)
   closedate = models.DateField(blank=True, null=True)
+  
+  
   def __str__(self):
     return str(self.unique_key)
