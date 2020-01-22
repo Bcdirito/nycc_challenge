@@ -3,3 +3,25 @@
     text-align: center;
     height: 75%;
 }
+
+
+.toggleButton {
+    background-color: rgb(30, 64, 163);
+    color: rgb(245, 245, 245);
+    border: 2px solid rgb(30, 64, 163);
+    border-radius: 7px;
+    height: 4vh;
+    
+}
+
+@media only screen and (min-width: 678px) {
+    .dashboard h1 {
+        display: flex;
+        justify-content: center;    
+    }
+
+    .toggleButton {
+        margin-top: 1.25%;
+        margin-left: 1.5%
+    }
+}

@@ -44,15 +44,11 @@ export default class Dashboard extends Component {
         else this.setState({...this.state, cases: [...data]}, () => console.log(this.state))
     }
 
-    renderButton = () => {
-        if (this.state.districtCases === true) return <button className="toggleButton" onClick={() => this.toggleCases()}>Constituents' Cases</button>
-        else return <button className="toggleButton" onClick={() => this.toggleCases()}>District Cases</button>
-    }
 
     render() {
         return (
             <div className="dashboard">
-                <h1>{this.state.districtCases === true ? "Cases in My District" : "Cases Made by My Constituents"} {this.renderButton()}</h1>
+                <h1>{this.state.districtCases === true ? "Cases in My District" : "Cases Made by My Constituents"} <button className="toggleButton" onClick={() => this.toggleCases()}>{this.state.districtCases === true ? "See Constituents' Cases": "See District Cases"}</button></h1>
                 <CaseTable data={this.state.cases}/>
                 {this.state.districtCases === true ? <DistrictInfoBanner open={this.state.openCases} closed={this.state.closedCases} top={this.state.topComplaint} /> : null} 
             </div>
