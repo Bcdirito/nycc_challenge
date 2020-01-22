@@ -61,7 +61,7 @@ export default class App extends Component {
   render(){
     return (
       <div className="App">
-        <h1>{this.state.authenticated === false ? "Welcome to the NYCC Dashboard" : "Cases in Your District"}</h1>
+        {this.state.authenticated === false ? <h1>Welcome to the NYCC Dashboard</h1> : null}
         {this.state.authenticated === false ? <LoginPage loginObj={this.state.credentials} submit={this.handleSubmit} changeHandler={this.handleChange} errorStatus={this.state.loginError} />  : <Dashboard /> }
       </div>
     );
