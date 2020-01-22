@@ -6,6 +6,7 @@
     border-radius: 7px;
     padding-top: 2%;
     padding-bottom: 2%;
+    box-shadow: 0 0 10px rgb(0,0,0);
     -webkit-box-shadow: 0 0 10px rgb(0,0,0);
     -moz-box-shadow: 0 0 10px rgb(0,0,0);
 }
@@ -22,7 +23,7 @@
 #loginForm .submitButton {
     background-color: rgb(30, 64, 163);
     color: rgb(245, 245, 245);
-    border: 2px solid black;
+    border: 2px solid rgb(30, 64, 163);
     width: 30%;
     height: 5vh;
 }
@@ -30,7 +31,6 @@
 
 #loginForm .submitButton:hover {
     background-color: rgb(245, 245, 245);
-    border-color: rgb(30, 64, 163);
     color: rgb(30, 64, 163);    
 }
 
